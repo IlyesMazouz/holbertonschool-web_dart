@@ -3,8 +3,6 @@ class Password {
 
   Password({required String password}) : _password = password;
 
-  String get password => _password;
-
   bool isValid() {
     if (_password.length < 8 || _password.length > 16) return false;
 
